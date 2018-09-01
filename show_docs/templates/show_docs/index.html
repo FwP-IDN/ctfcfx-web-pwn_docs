@@ -1,0 +1,36 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'show_docs/style.css' %}" />
+
+
+<!DOCTYPE html>
+<html>
+<script src = "{% static 'show_docs/style.js' %}"></script>
+<head>
+    <link rel="shortcut icon" href="{% static 'show_docs/favicon.ico' %}">
+    <title> Web of Pwner's </title>
+</head>
+<body>
+    <article>
+        <header>
+            <a href = "/">Home</a>
+            <h1>Wellcome Pwner's</h1>
+            <h3>You must learn so much about Pwntools</h3>
+        </header>
+    </article>
+    {% for x in flat_list %}
+        {% if x.start_nodes %}<ul id = "ul_{{ x.data }}">{% endif %}
+        {% if x.end_nodes %}</ul>{% endif %}
+        {% if x.start_node %}<li id = "li_{{ x.data }}">{% endif %}
+        {% if x.end_node %}</li>{% endif %}
+        {% if x.is_data %}
+            <button id = "btn_{{ x.data }}" type="button" onclick="toggleList('{{ x.data }}', this)">I</button>
+            <font color="#003F3F"><a href = "{{ x.link }}">   {{ x.data }}</a></font><br><br>{% endif %}
+    {% endfor %}
+    <footer>
+        <p>Image from Kali Linux<br>
+            Web by Febriananda Wida Pramudita
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+ul {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+    text-shadow: 2px 0 0 #00ffff, -2px 0 0 #00ffff, 0 2px 0 #00ffff, 0 -2px 0 #00ffff, 1px 1px #00ffff, -1px -1px 0 #00ffff, 1px -1px 0 #00ffff, -1px 1px 0 #00ffff;
+}
+
+button {
+    background-color: #00007F;
+    color: #00007F;
+    border: none;
+}
+
+
+footer {
+    background-color: #00007F;
+    color: cyan;
+    text-align: center;
+    flex: 0 0 50px;
+    margin-top: auto;
+    padding: 15px 15px 15px 15px;
+}
+
+body {
+    background-color: black;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    text-shadow: 2px 0 0 #00ffff, -2px 0 0 #00ffff, 0 2px 0 #00ffff, 0 -2px 0 #00ffff, 1px 1px #00ffff, -1px -1px 0 #00ffff, 1px -1px 0 #00ffff, -1px 1px 0 #00ffff;
+    text-align: center;
+}
+
+h3 {
+    text-shadow: 2px 0 0 #00ffff, -2px 0 0 #00ffff, 0 2px 0 #00ffff, 0 -2px 0 #00ffff, 1px 1px #00ffff, -1px -1px 0 #00ffff, 1px -1px 0 #00ffff, -1px 1px 0 #00ffff;
+    text-align: center;
+}
+
+h4 {
+    text-shadow: 2px 0 0 #00ffff, -2px 0 0 #00ffff, 0 2px 0 #00ffff, 0 -2px 0 #00ffff, 1px 1px #00ffff, -1px -1px 0 #00ffff, 1px -1px 0 #00ffff, -1px 1px 0 #00ffff;
+}
+
+a {
+    text-shadow: 2px 0 0 #00ffff, -2px 0 0 #00ffff, 0 2px 0 #00ffff, 0 -2px 0 #00ffff, 1px 1px #00ffff, -1px -1px 0 #00ffff, 1px -1px 0 #00ffff, -1px 1px 0 #00ffff;
+}
+
+
