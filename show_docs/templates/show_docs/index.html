@@ -13,7 +13,7 @@
 <body>
     <article>
         <header>
-            <a href = "/">Home</a>
+            <a href = "/index.php">Home</a>
             <h1>Wellcome Pwner's</h1>
             <h3>You must learn so much about Pwntools</h3>
         </header>
@@ -25,7 +25,7 @@
         {% if x.end_node %}</li>{% endif %}
         {% if x.is_data %}
             <button id = "btn_{{ x.data }}" type="button" onclick="toggleList('{{ x.data }}', this)">I</button>
-            <font color="#003F3F"><a href = "{{ x.link }}">   {{ x.data }}</a></font><br><br>{% endif %}
+            <font color="#003F3F"><a href = "{{ x.link }}" target = "_blank">   {{ x.data }}</a></font><br><br>{% endif %}
     {% endfor %}
     <footer>
         <p>Image from Kali Linux<br>

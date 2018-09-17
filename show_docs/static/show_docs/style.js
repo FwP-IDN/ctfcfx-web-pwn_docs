@@ -18,3 +18,7 @@ function toggleList(elementId) {
         icon.style.color = "#007F7F";
     }
 }
+
+function openNewTab(link) {
+    window.open(link,'_blank');
+}

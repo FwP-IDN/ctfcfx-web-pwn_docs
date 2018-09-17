@@ -16,7 +16,7 @@ def rec(obj_str, depth, type_list, flat_list):
         return
     type_list.append(type(obj))
     flat_list.append({'start_node': True, 'data': obj_str})
-    flat_list.append({'is_data': True, 'data': obj_str, 'link': obj_str.replace('.', '/')})
+    flat_list.append({'is_data': True, 'data': obj_str, 'link': obj_str.replace('.', '/') + '/index.php'})
     flat_list.append({'end_node': True})
     flat_list.append({'start_nodes': True, 'data': obj_str})
     if hasattr(obj, '__dict__'):
