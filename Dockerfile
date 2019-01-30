@@ -4,11 +4,11 @@ RUN useradd -ms /bin/bash compfest
 
 RUN apt-get update -y && apt-get upgrade -y && apt-get install socat openssh-server -y
 
-COPY id_rsa.pub /tmp/
-RUN mkdir -p /home/compfest/.ssh
-RUN mv /tmp/id_rsa.pub /home/compfest/.ssh/authorized_keys
-RUN chown -R compfest:compfest /home/compfest/.ssh
-RUN chmod 644 /home/compfest/.ssh/authorized_keys
+# COPY id_rsa.pub /tmp/
+# RUN mkdir -p /home/compfest/.ssh
+# RUN mv /tmp/id_rsa.pub /home/compfest/.ssh/authorized_keys
+# RUN chown -R compfest:compfest /home/compfest/.ssh
+# RUN chmod 644 /home/compfest/.ssh/authorized_keys
 
 
 
